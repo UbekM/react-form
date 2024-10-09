@@ -52,7 +52,7 @@ export default function Form() {
     const salt = bcrypt.genSaltSync(10);
     const hashed = bcrypt.hashSync(values.password, salt);
     setHashedPassword(hashed);
-    
+
     const submissionData = {
       ...values,
       password: hashed,
@@ -61,7 +61,12 @@ export default function Form() {
 
     console.log("Form Values:", submissionData);
 
-    send("service_q2khyld", "template_7mp71o3", submissionData, "ew3YK7a8J2kH0RSWe")
+    send(
+      "service_q2khyld",
+      "template_7mp71o3",
+      submissionData,
+      "ew3YK7a8J2kH0RSWe"
+    )
       .then((response) => {
         console.log("Email sent successfully!", response.status, response.text);
         alert("Your data has been sent successfully!");
@@ -135,7 +140,7 @@ export default function Form() {
                       type="text"
                       value={values.lastNameName}
                       onChange={handleChange}
-                      className="border-b-gray-500 border-b-[1.9px]  p-1 focus:outline-none focus:border-b-2 focus:border-b-indigo-500 transition duration-200"
+                      className="border-b-gray-500 border-b-[1.9px]  p-1 focus:outline-none focus:border-b-2 focus:border-b-indigo-500 transition duration-200 mt-5"
                       placeholder="Please enter your last name"
                       onBlur={handleBlur}
                     />
