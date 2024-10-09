@@ -130,7 +130,7 @@ export default function Form() {
                   <div className="flex flex-col">
                     <label
                       htmlFor="LastName"
-                      className="font-semibold text-sm pb-2 mt-5"
+                      className="font-semibold text-sm pb-2 lg:mt-0 sm:mt-5 md:mt-0"
                     >
                       Last Name
                     </label>
