@@ -130,7 +130,7 @@ export default function Form() {
                   <div className="flex flex-col">
                     <label
                       htmlFor="LastName"
-                      className="font-semibold text-sm pb-2"
+                      className="font-semibold text-sm pb-2 mt-5&"
                     >
                       Last Name
                     </label>
@@ -138,9 +138,9 @@ export default function Form() {
                       id="lastName"
                       name="lastName"
                       type="text"
-                      value={values.lastNameName}
+                      value={values.lastName}
                       onChange={handleChange}
-                      className="border-b-gray-500 border-b-[1.9px]  p-1 focus:outline-none focus:border-b-2 focus:border-b-indigo-500 transition duration-200 mt-5"
+                      className="border-b-gray-500 border-b-[1.9px]  p-1 focus:outline-none focus:border-b-2 focus:border-b-indigo-500 transition duration-200 "
                       placeholder="Please enter your last name"
                       onBlur={handleBlur}
                     />
